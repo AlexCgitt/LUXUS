@@ -121,8 +121,8 @@ nav ul li:hover {
     margin-right: 40px;
   }
   .images .image-card .image-left img {
-    height: 200px;
-    width: 400px;
+    /* height: 200px; */
+    width: 70%;
   }
 
 .page-content .images .image-card .image-right button {
