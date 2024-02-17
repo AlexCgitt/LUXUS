@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Noto+Sans:wght@300;400&family=Oswald:wght@300&display=swap');
+
+body{
+    padding: 0 2%;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+nav .profile{
+    display: flex;
+    align-items: center;
+}
+
+nav .profile img {
+    width: 80px;
+    height: 80px;
+}
+
+nav h1{
+    font-family: 'Cinzel', sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+nav ul li:hover {
+    border-bottom-color: black;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none; 
+}
+
+
+.page-content {
+    margin: 4%;
+}
+
+.page-content header {
+    margin-top: 5%;
+    max-width: 80%;
+}
+
+.page-content header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 6vw;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.section-title {
+    position: relative;
+    font-size: 30px;
+    margin: 14px 0 0 0;
+    margin-bottom: 5%;
+}
+
+.section-title::after {
+    position: absolute;
+    content:'';
+    width: 70px;
+    left: 50%;
+    height: 5px;
+    bottom: -6px;
+    transform: translate(-50%,-50%);
+}
+
+.skills {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {
+    max-width: 70%; /* Ajustez la largeur maximale selon vos besoins */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+/* Splash */
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.splash i {
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+}    
+    
+.page-title {
+    font-size: 60px;
+    margin: 30px 0 0 0;
+    text-shadow: 2px 2px 10px;
+    position: relative;
+}
+
+.page-subtitle {
+    font-size: 30px;
+    margin: auto;
+    text-shadow: 3px 2px 5px;
+}
+
+.page-title::after {
+    position: absolute;
+    content:'';
+    width: 300px;
+    height: 4px;
+    left: 50%;
+    bottom: -2px;
+    transform: translateX(-50%);   
+}
+
+
+
+.intro p {
+    font-size: 20px;
+    width: 68%;
+    margin: 0 auto;
+    padding: 48px 0;
+}
+
+/* Skills */
+
+[class^="skill-"] {
+    position: relative;
+}
+
+.skill-image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.skill-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  transition: all 1s;
+}
+
+.skill-right .skill-image {
+    right: 0;
+}
+ .skill-right .skill-description {
+    padding: 36px 55% 36px 0;
+    text-align: right;
+}
+
+.skill-left .skill-description {
+    padding: 36px 0 36px 55%;
+    text-align: left;
+}
+
+.skill-image img:hover {
+    transform: scale(20);
+}
+
+h2{
+    text-align: center;
+    margin-top: 4%;
+    font-family: 'Cinzel', sans-serif;
+    font-size: 18px;
+    margin-bottom: 4%;
+    text-decoration: underline;
+}
+
+.text{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+footer{
+    margin-top: 100px;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------*/
+
+/* format telephone */
+  
+@media screen and (max-width: 750px) {
+    nav{
+        justify-content: center;
+    }
+    nav ul{
+        display: none;
+    }
+    
+    .page-content header{
+        margin-top: 10%;
+        max-width: 100%;
+    }
+
+    .skills {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skill-left,
+    .skill-right {
+        width: 100%;
+    }
+
+    .skill-left .skill-description,
+    .skill-right .skill-description {
+        padding: 20px;
+    }
+
+    .skill-image {
+        display: none;
+    }
+
+}
+
+
