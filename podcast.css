@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Noto+Sans:wght@300;400&family=Oswald:wght@300&display=swap');
+
+body{
+    padding: 0 2%;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+nav .profile{
+    display: flex;
+    align-items: center;
+}
+
+nav .profile img {
+    width: 80px;
+    height: 80px;
+}
+
+nav h1{
+    font-family: 'Cinzel', sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+nav ul li:hover {
+    border-bottom-color: black;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none; 
+}
+
+.page-content {
+    margin: 4%;
+}
+
+.page-content header {
+    margin-top: 5%;
+    max-width: 80%;
+}
+
+.page-content header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 6vw;
+}
+
+.page-content header p{
+    line-height: 30px;
+    color:#818181 ;
+}
+
+.page-content .audio-container {
+    text-align: center; 
+}
+
+.page-content h2{
+    font-family: 'Cinzel', sans-serif;
+    font-size: 25px;
+    margin-bottom: 14px;
+    text-decoration: overline;
+}
+
+.presentation h3{
+    font-family: 'Cinzel', sans-serif;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.yo{
+    padding-top: 5%;
+}
+
+
+.presentation p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------*/
+
+/* format telephone */
+  
+  @media screen and (max-width: 880px) {
+    .images .image-card {
+      flex-wrap:wrap;
+    }
+  }
+
+
+@media screen and (max-width: 750px) {
+    nav{
+        justify-content: center;
+    }
+    nav ul{
+        display: none;
+    }
+    
+    .page-content header{
+        margin-top: 10%;
+        max-width: 100%;
+    }
+}
+
+
