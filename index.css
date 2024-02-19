@@ -102,7 +102,7 @@ nav ul li a {
 
 .images .image-card {
     display:flex;
-    align-items:center;
+    align-items:justify;
     margin-bottom: 60px;
   }
   .images .image-card .image-left {

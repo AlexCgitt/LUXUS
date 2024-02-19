@@ -192,12 +192,12 @@ nav ul li a {
 }
  .skill-right .skill-description {
     padding: 36px 55% 36px 0;
-    text-align: right;
+    text-align: justify;
 }
 
 .skill-left .skill-description {
     padding: 36px 0 36px 55%;
-    text-align: left;
+    text-align: justify;
 }
 
 .skill-image img:hover {
@@ -231,7 +231,7 @@ h5 a:hover {
 
 
 .text{
-    text-align: center;
+    text-align: justify;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -280,6 +280,15 @@ footer p{
 
     .skill-image {
         display: none;
+    }
+    body{
+        justify-content:center;
+        text-align: justify;
+
+    }
+
+    .section-title{
+        justify-content: center;
     }
 
 }
